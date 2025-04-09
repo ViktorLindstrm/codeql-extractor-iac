@@ -13541,7 +13541,7 @@ async function newCodeQL() {
         repository: exports.EXTRACTOR_REPOSITORY,
         version: version,
         path: await findCodeQL(),
-        pack: "advanced-security/iac-queries",
+        pack: "viktorlindstrm/iac-queries",
         suite: "codeql-suites/iac-code-scanning.qls",
         source_root: core.getInput("source-root"),
         output: core.getInput("sarif"),
@@ -13678,7 +13678,7 @@ async function codeqlDatabaseAnalyze(codeql, database_path) {
         codeql_output,
     ];
     // remote pack or local pack
-    if (codeql.pack.startsWith("advanced-security/")) {
+    if (codeql.pack.startsWith("viktorlindstrm/")) {
         var suite = codeql.pack + ":" + codeql.suite;
     }
     else {

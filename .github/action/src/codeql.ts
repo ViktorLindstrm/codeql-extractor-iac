@@ -211,7 +211,7 @@ export async function codeqlDatabaseAnalyze(
   ];
 
   // remote pack or local pack
-  if (codeql.pack.startsWith("advanced-security/")) {
+  if (codeql.pack.startsWith("viktorlindstrm/")) {
     var suite = codeql.pack + ":" + codeql.suite;
   } else {
     // assume path
