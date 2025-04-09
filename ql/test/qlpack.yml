@@ -1,10 +1,8 @@
-name: advanced-security/iac-tests
+name: viktorlindstrm/iac-tests
 groups: [iac, test]
 dependencies:
-dependencies:
-  advanced-security/iac-all: ${workspace}
-  advanced-security/iac-queries: ${workspace}
-extractor: iac
+  viktorlindstrm/iac-all: ${workspace}
+  viktorlindstrm/iac-queries: ${workspace}
 extractor: iac
 tests: .
 warnOnImplicitThis: true

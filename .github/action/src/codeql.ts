@@ -39,7 +39,7 @@ export async function newCodeQL(): Promise<CodeQLConfig> {
     repository: EXTRACTOR_REPOSITORY,
     version: version,
     path: await findCodeQL(),
-    pack: "advanced-security/iac-queries",
+    pack: "viktorlindstrm/iac-queries",
     suite: "codeql-suites/iac-code-scanning.qls",
     source_root: core.getInput("source-root"),
     output: core.getInput("sarif"),

@@ -1,9 +1,9 @@
-name: advanced-security/iac-queries
+name: viktorlindstrm/iac-queries
 version: 0.4.1
 groups: 
   - iac
   - queries
 dependencies:
-  advanced-security/iac-all: ${workspace}
+  viktorlindstrm/iac-all: ${workspace}
 extractor: iac
 defaultSuiteFile: codeql-suites/iac-code-scanning.qls
